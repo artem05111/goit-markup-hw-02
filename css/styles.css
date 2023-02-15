@@ -1,11 +1,16 @@
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --page-header-color: #e7e9fc;
+  --primary-color-theme-page: #ffffff;
+  --secondary-color-theme-page: #2e2f42;
+  --theme-section: #f4f4fd;
   --accent-color: #404bbf;
   --primary-text-color-theme-dark: #ffffff;
   --primary-text-color-theme-light: #2e2f42;
   --secondary-text-color-theme-dark: #e7e9fc;
   --secondary-text-color-theme-light: #434455;
+  --primary-text-color-logo: #4d5ae5;
 }
 
 .list {
@@ -16,10 +21,12 @@
 }
 body {
   font-family: var(--primary-font);
+  background-color: var(--primary-color-theme-page);
+  font-size: 16px;
 }
 
 /* ==============COMPONENTS============== */
-.secondary-title {
+.section-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -28,8 +35,7 @@ body {
   color: var(--primary-text-color-theme-light);
 }
 
-.subtitle {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -39,8 +45,7 @@ body {
   color: var(--primary-text-color-theme-light);
 }
 
-.description {
-  font-size: 16px;
+.section-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -49,15 +54,7 @@ body {
 
 .part-logo {
   font-family: var(--secondary-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #4d5ae5;
+  color: var(--primary-text-color-logo);
 }
 
 /* ==============/COMPONENTS============== */
@@ -75,12 +72,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #2e2f42;
+  color: var(--primary-text-color-theme-light);
 }
 
 .menu-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -95,8 +91,6 @@ body {
 
 .contact-mail {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -105,8 +99,6 @@ body {
 
 .contact-phone-number {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -127,7 +119,6 @@ body {
 
 /* ==============HERO============== */
 .main-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -137,12 +128,11 @@ body {
 }
 
 .hero-section {
-  background: #2e2f42;
+  background: var(--secondary-color-theme-page);
 }
 
 .order-btn {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
@@ -165,7 +155,7 @@ body {
 
 /* ==============ADVANTAGES============== */
 .team-section {
-  background: #f4f4fd;
+  background: var(--theme-section);
 }
 
 .about-worker {
@@ -184,7 +174,6 @@ body {
   border-radius: 4px;
   font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
@@ -202,7 +191,6 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
@@ -229,11 +217,10 @@ body {
 }
 
 .page-footer {
-  background: #2e2f42;
+  background: var(--secondary-color-theme-page);
 }
 
-.description-footer {
-  font-size: 16px;
+.footer-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
